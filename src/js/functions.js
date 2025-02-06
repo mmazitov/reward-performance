@@ -96,6 +96,14 @@ const initializeNavigation = () => {
 
 	hamburgerBtn.addEventListener("click", () => toggleNavigation(true));
 	closeBtn?.addEventListener("click", () => toggleNavigation(false));
+
+	// Remove 'no-scroll' class if screen width exceeds 1024px
+	window.addEventListener("resize", () => {
+		if (window.innerWidth > 768) {
+			body.classList.remove("no-scroll");
+			navigation.classList.remove("open");
+		}
+	});
 };
 
 // Initializes the sidebar toggle functionality
@@ -114,4 +122,12 @@ const initializeSidebar = () => {
 
 	userBtn.addEventListener("click", () => toggleSidebar(true));
 	closeBtn?.addEventListener("click", () => toggleSidebar(false));
+
+	// Remove 'no-scroll' class if screen width exceeds 1024px
+	window.addEventListener("resize", () => {
+		if (window.innerWidth > 768) {
+			body.classList.remove("no-scroll");
+			sidebar.classList.remove("open");
+		}
+	});
 };

@@ -1,0 +1,54 @@
+<form class="recognize__form" aria-label="Recognize Form">
+	<h2 class="recognize__form--title">RECOGNIZE</h2>
+
+	@@include('../components/recipients.html')
+	<p class="recognize__form--text">
+		I’d like to recognize <a href="#">a group of colleagues</a> for the
+		<a href="#">Peer-to-Peer Program</a>
+	</p>
+	<div class="recognize__form--group first" aria-label="Recognize Form Group, Criteria">
+		<label class="recognize__form--label">Criteria</label>
+		<div class="select__custom">
+			<span class="select__custom--selected"> Select option </span>
+			<div class="select__custom--options">
+				<div class="select__custom--option" data-value="1">Option 1</div>
+				<div class="select__custom--option" data-value="2">Option 2</div>
+				<div class="select__custom--option" data-value="3">Option 3</div>
+			</div>
+			<span class="select__custom--btn">▾</span>
+		</div>
+	</div>
+
+	<div class="recognize__form--group second" aria-label="Recognize Form Group, Points">
+		<label class="recognize__form--label">Points</label>
+		<div class="select__custom">
+			<span class="select__custom--selected"> Select option </span>
+			<div class="select__custom--options">
+				<div class="select__custom--option" data-value="1">Option 1</div>
+				<div class="select__custom--option" data-value="2">Option 2</div>
+				<div class="select__custom--option" data-value="3">Option 3</div>
+			</div>
+			<span class="select__custom--btn">▾</span>
+		</div>
+	</div>
+
+	<div class="recognize__form--group message" aria-label="Recognize Form Group, Message">
+		<label class="recognize__form--label">PERSONAL MESSAGE:</label>
+		<textarea class="recognition__form--message">
+I would like to thank each of you for your outstanding contributions to helping us attain an on-time launch of project Narwhal. The downstream impact of delivering our new product set is competitively invaluable and key to supporting us and our partners' success in the marketplace. You guys embody our values and have delivered along every step of the way.</textarea
+		>
+	</div>
+
+	@@include('../components/preview.html')
+
+	<div class="recognize__form--actions" aria-label="Recognize Form Actions">
+		<div
+			class="recognize__form--group recognize__form--group--copy"
+			aria-label="Recognize Form Group, Copy"
+		>
+			<label class="recognize__form--label">send copy to:</label>
+			<input type="text" class="recognize__form--input" placeholder="Enter Name or Email" />
+		</div>
+		<button type="submit" class="btn-review">Review Awards</button>
+	</div>
+</form>

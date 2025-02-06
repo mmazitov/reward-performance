@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<title>Главная</title>
+		@@include('../main/head.html')
+	</head>
+	<body>
+		@@include('../partials/header.html')
+
+		<main class="main" role="main">
+			@@include('../partials/sidebar.html')
+			<section class="content" aria-label="Main Content">
+				@@include('../components/recognize-form.html')
+			</section>
+		</main>
+	</body>
+	@@include('../main/scripts.html')
+</html>

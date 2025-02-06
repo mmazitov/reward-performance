@@ -1,8 +1,8 @@
-<h1 align="center">Creatic Website</h1>
+<h1 align="center">Reward Performance</h1>
 
 ## 🎯 About
 
-Reward Repformance is a web-based application designed to facilitate employee recognition. The system enables users to recognize a colleague through intuitive forms that capture recipient details along with a personalized message.
+Reward Performance is a web-based application designed to facilitate employee recognition. The system enables users to recognize a colleague through intuitive forms that capture recipient details along with a personalized message.
 
 ## 🛠 Tech Stack
 

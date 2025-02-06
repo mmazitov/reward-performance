@@ -200,6 +200,10 @@ body {
 	width: clamp(200px, 30%, 496px);
 	flex-direction: column;
 	row-gap: 24px;
+	.btn__close.fa-solid {
+		top: 10px;
+		right: 10px;
+	}
 
 	@media screen and (max-width: 768px) {
 		position: absolute;
@@ -459,6 +463,10 @@ body {
 			width: 104px;
 			height: 104px;
 			cursor: pointer;
+			img {
+				width: 104px;
+				height: 104px;
+			}
 			&:before {
 				position: absolute;
 				inset: 0;
@@ -477,6 +485,10 @@ body {
 			@media screen and (max-width: 768px) {
 				width: 80px;
 				height: 80px;
+				img {
+					width: 80px;
+					height: 80px;
+				}
 			}
 		}
 
